@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#110e15"><meta name="description" content="For Riya. A year of us, and all the chapters still to come.">
+  <title>For Riya · A year of us</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='20' fill='%23110e15'/%3E%3Ctext x='20' y='29' text-anchor='middle' fill='%23d4b784' font-family='Georgia' font-style='italic' font-size='30'%3Er%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css?v=mobile-memo-spacing-27"><link rel="stylesheet" href="water-story.css?v=mobile-memo-spacing-27"><script src="story.js?v=mobile-memo-spacing-27" defer></script><script src="memory-photos.js?v=mobile-memo-spacing-27" defer></script><script src="app.js?v=mobile-memo-spacing-27" defer></script>
+</head>
+<body>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div><div id="lights" aria-hidden="true"></div><div class="water-world" aria-hidden="true"><div class="water-surface"></div><div class="water-reflection"></div></div>
+  <header class="masthead"><a href="#opening" aria-label="Back to the opening">a year of <i>us.</i></a><button id="motion" class="quiet" aria-pressed="false" aria-label="Pause decorative animations">Motion on</button></header>
+  <main>
+    <section id="opening" class="opening">
+      <svg class="water-filter" aria-hidden="true" width="0" height="0"><defs><filter id="flowing-water" x="-5%" y="-5%" width="110%" height="110%" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.009 0.065" numOctaves="1" seed="7" result="ripples"/><feOffset in="ripples" result="current"><animate attributeName="dx" values="-30;30;-30" dur="14s" repeatCount="indefinite"/><animate attributeName="dy" values="0;16;0" dur="9s" repeatCount="indefinite"/></feOffset><feDisplacementMap in="SourceGraphic" in2="current" scale="11" xChannelSelector="R" yChannelSelector="G"/></filter></defs></svg><div class="hero-water" aria-hidden="true"><div class="flowing-water-surface"></div></div><div class="water-halo" aria-hidden="true"></div>
+      <p class="eyebrow intro-in">ONE YEAR. A MILLION LITTLE MOMENTS.</p>
+      <h1 class="intro-in">For <em>Riya</em><span class="gold">.</span></h1>
+      <p class="opening-copy intro-in">Somehow, a whole year.<br>Somehow, only the beginning.</p>
+      <button id="begin" class="begin intro-in"><span>Begin our story</span><span class="begin-heart" aria-hidden="true">♡</span></button>
+      <p class="footnote intro-in">Made for you, by yours only.</p>
+      <span class="vertical-label" aria-hidden="true">OUR FIRST CHAPTER</span>
+      <button class="secret-star" id="secret" aria-label="A little star">✧</button>
+    </section>
+    <section id="memories" class="water-memories" aria-label="Our memory timeline">
+      <div class="timeline-intro reveal"><h2>One year.<br><em>A constellation of us.</em></h2><p>Scroll to follow the lights.</p></div>
+      <nav id="memory-nav" class="memory-nav" aria-label="Jump to a memory"><span id="memory-position" aria-live="off">01 / 12</span><div id="memory-dots"></div></nav>
+      <div id="timeline" class="river-timeline"></div>
+      <p class="river-end reveal"><span aria-hidden="true">✧</span><br>And our story never ends.</p>
+    </section>
+    <section id="reasons" class="chapter reasons">
+      <div class="chapter-heading reveal"><h2>It's the little things<br><em>about you.</em></h2><p>A few reasons, a million more.<br>Tap a card, and they are yours.</p></div>
+      <div id="reason-cards" class="reason-grid"></div><p id="reason-count" class="footnote" aria-live="polite"></p>
+    </section>
+    <section id="letter" class="chapter letter-section">
+      <div class="chapter-heading reveal"><p class="eyebrow">THE PART I WROTE JUST FOR YOU</p><h2>One more thing,<br><em>my love.</em></h2></div>
+      <div class="envelope-wrap reveal"><button id="envelope" class="envelope" aria-label="Open your anniversary letter" aria-expanded="false" aria-controls="letter-paper"><span class="envelope-paper" aria-hidden="true">To my favorite person,</span><span class="envelope-flap" aria-hidden="true"></span><span class="envelope-front" aria-hidden="true"></span><span class="seal" aria-hidden="true">R</span><span class="envelope-label">For Riya, with love</span></button></div>
+      <p id="letter-hint" class="footnote">A letter, sealed with a whole year's worth of love.<br>Tap to open.</p>
+      <article id="letter-paper" class="letter-paper" hidden tabindex="-1"><p class="eyebrow">20.09.2026</p><h3>My Riya,</h3><div id="letter-body"></div><p class="signature">Always, yours.</p><button id="finish" class="text-button">One Last Surprise?</button></article>
+    </section>
+    <section id="ending" class="ending" hidden><h2><span>365 days down.</span><em>Now it's time for<br>365 strokes.</em></h2><p class="gift-message">Jk here's a code that you can redeem to replace your lost airpod!</p><div class="scratch-gift"><div class="scratch-box"><span id="gift-code" aria-hidden="true">XYFX2DQ26X2C9M5J</span><canvas id="scratch-cover" aria-label="Scratch with your finger or mouse to reveal your gift code"></canvas></div><button id="reveal-code" class="text-button">Reveal without scratching</button><p id="scratch-status" class="footnote" role="status"></p></div><button id="replay" class="text-button">Back to our beginning ↺</button></section>
+  </main>
+  <footer><span>For you. Always.</span><span>ONE YEAR OF US <span class="gold">✧</span></span></footer>
+  <dialog id="lightbox" aria-label="Our photo gallery"><button id="close-lightbox" class="close-lightbox circle-button" aria-label="Close photo">×</button><div id="lightbox-media"></div><div class="lightbox-controls"><button id="lightbox-prev" class="circle-button" aria-label="Previous image">←</button><p id="lightbox-caption" aria-live="polite"></p><button id="lightbox-next" class="circle-button" aria-label="Next image">→</button></div></dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
