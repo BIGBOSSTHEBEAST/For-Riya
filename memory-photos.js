@@ -224,13 +224,13 @@ const memoryPhotos = {
     {
       "src": "memory-12-01.webp",
       "alt": "Memory 12, photograph 1",
-      "caption": "golden-hour together",
+      "caption": "golden hour together",
       "type": "image"
     },
     {
       "src": "memory-12-02.webp",
       "alt": "Memory 12, photograph 2",
-      "caption": "my forever plus-one",
+      "caption": "my forever plus one",
       "type": "image"
     },
     {
